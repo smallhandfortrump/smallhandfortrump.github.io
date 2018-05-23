@@ -1,14 +1,44 @@
 <html>
 
+<head>
+  <meta charset="utf-8">
+
+<title>Go Home Trump</title>
+<meta name="description" content="Give Trump the small hand on his UK visit">
+<meta name="author" content="#gohometrump foam protest hands. Exclusively designed to provoke. Only available in Xsmall">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
 <style>
+
+.page {
+
+
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 920px;
+  position: relative;
+
+}
+
+.photos {
+  padding: 1em;
+
+}
+
+.reposition {
+  position: relative;
+  /*top: -2%;*/
+}
 
 img {
   max-height: 100vh;
   max-width: 100%;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-
+  max-height: 100%;
 }
 
 div {
@@ -22,13 +52,158 @@ body {
   text-align: center;
 }
 
+/* Feel free to change duration  */
+.animated  {
+  -webkit-animation-duration : 0 ms;
+  animation-duration : 0 ms;
+  -webkit-animation-fill-mode : both  ;
+  animation-fill-mode : both  ;
+}
+.owl-animated-out {
+  z-index : 1
+   }
+.owl-animated-in {
+  z-index : 0
+   }
+
+.fadeOut  {
+  -webkit-animation-name : fadeOut  ;
+  animation-name : fadeOut  ;
+}
+@-webkit-keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }
+  100% {
+    opacity : 0   ;
+  }
+}
+@keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }
+  100% {
+    opacity : 0   ;
+  }
+}
+.owl-nav {
+  display: none;
+}
+
+#buy {
+  width: 30%;
+  position: absolute;
+  z-index: 100;
+  top: 5%;
+  right: 0.5%;
+}
+
 </style>
 
-<body>
+</head>
 
-<div><img src="Trump1.png"></div>
-<div><img src="Trump2.png"></div>
-<div><img src="Trump3.png"></div>
+<body>
+<div class="page">
+  <div class="owl-carousel" id="owl-carousel-top">
+  <div><img src="trump_1a.png"></div>
+  <div><img src="trump_1b.png"></div>
+  </div>
+</div>
+
+<div class="page reposition">
+  <div><img src="trump_2.png"></div>
+</div>
+
+<div class="page reposition photos" >
+
+  <a href="http://kickstarter.com"><img id="buy" src="button.gif"></a>
+  <div><img src="trump_3.jpg"></div>
+  </div>
+
+</div>
+
+<div class="page photos" >
+
+  <a href="http://kickstarter.com"><img id="buy" src="button.gif"></a>
+  <div class="owl-carousel owl-carousel-bottom" id="owl-carousel-bottom">
+  <div><img src="trump_4a.jpg"></div>
+  <div><img src="trump_4b.jpg"></div>
+
+  </div>
+
+</div>
+
+<div class="page photos" >
+
+<a href="http://kickstarter.com"><img id="buy" src="button.gif"></a>
+    <div><img src="trump_5.jpg"></div>
+  </div>
+
+</div>
+
+<div class="page photos" >
+
+
+  <div class="owl-carousel" id="owl-carousel-bottom-2">
+
+  <div><img src="trump_6a.jpg"></div>
+  <div><img src="trump_6b.jpg"></div>
+  <div><img src="trump_6c.jpg"></div>
+  <div><img src="trump_6d.jpg"></div>
+  <div><img src="trump_6e.jpg"></div>
+  <div><img src="trump_6f.jpg"></div>
+  <div><img src="trump_6g.jpg"></div>
+  <div><img src="trump_6h.jpg"></div>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script type="text/javascript">
+$('#owl-carousel-bottom').owlCarousel({
+    loop:true,
+    margin:10,
+    navigation: false,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    dots: false,
+    autoplay: true,
+    autoplayTimeout:2000,
+    smartSpeed:0,
+    nav:true,
+    items: 1
+  })
+  $('#owl-carousel-bottom-2').owlCarousel({
+      loop:true,
+      margin:10,
+      navigation: false,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      dots: false,
+      autoplay: true,
+      autoplayTimeout:2000,
+      smartSpeed:0,
+      nav:true,
+      items: 1
+    })
+  $('#owl-carousel-top').owlCarousel({
+      loop:true,
+      navigation: false,
+      dots: false,
+      animate: false,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      smartSpeed:0,
+      autoplay:true,
+      autoplayTimeout:1000,
+      nav:true,
+      items: 1
+    })
+
+</script>
+
 </body>
 
 </html>
